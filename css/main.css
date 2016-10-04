@@ -1,3 +1,4 @@
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -11,12 +12,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
   font-family: "PT Sans", sans-serif;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
 }
 
 .img-flex {
@@ -24,10 +20,19 @@ html {
   width: 100%;
 }
 
-.banner {
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
+.banner {
+  position: relative;
+  overflow: hidden;
+  max-height: 24em;
 }
 
 .banner-content {
-
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
